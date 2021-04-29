@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>Employee information </h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="employee.name" required>
+
+  </mat-form-field>
+</div>
+
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [(ngModel)]="employee.email" required>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Phone</mat-label>
+    <input matInput [(ngModel)]="employee.phoneNumber" required>
+  </mat-form-field>
+</div>
+
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Website</mat-label>
+    <input matInput [(ngModel)]="employee.website" required>
+  </mat-form-field>
+</div>
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="employee" cdkFocusInitial class="btn btn-primary" [disabled]="isEmpty()">Update</button>
+</div>
+
