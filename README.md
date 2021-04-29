@@ -4,7 +4,7 @@ Front-End of this application was built using [Angular](https://github.com/angul
 Back-End of this application was built using [Spring Boot](https://start.spring.io/) , **Spring Web, Spring Data JPA, H2-database, Spring Boot DevTools and Java 11**.
 
 ## Build Front-End
-**Serve it locally** : `ng serve`
+**Serve it locally** : `ng serve` URL:`localhost:4200 `
 Run `ng build --prod` to production build the project. The build artifacts will be stored in the `dist/` directory. You can deploy them in Nginx or Apache server. 
 
 ## Build Back-End
